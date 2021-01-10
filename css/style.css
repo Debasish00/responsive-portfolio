@@ -85,7 +85,8 @@ header nav .branding{
     padding: 1.5rem 0;
 }
 .hero .left img{
-    width: 400px;
+    width: 450px;
+    
 }
 
 .hero .right{
@@ -118,12 +119,25 @@ header nav .branding{
     margin-top: -7rem;
 }
 
+.hero .right .btn-wrapper1 a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.hero .right .btn-wrapper1 a:hover{
+    
+    color: var(--secondary);
+    transition: all .3 ease;
+}
+
 section{
     padding: 5rem 0;
 }
 
 section.about .about-me-img{
     height: 450px;
+    
+
 }
 
 section.about h1{
@@ -263,6 +277,45 @@ section.contact .card-wrapper{
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2rem;
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:2rem;
+    margin-bottom: 2rem;
+}
+
+section.contact .input-wrap2{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+section.contact input{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrap2 input{
+    margin-bottom: 2rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrap2 textarea{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+section.contact .btn-wrapper2{
+    text-align: center;
+    margin-top: 2rem;
 }
 
 footer{
@@ -277,8 +330,20 @@ footer img{
 }
 
 .footer-socials a img{
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    background: var(--primary);
+    margin-right: 0.9rem;
+    border-radius: 70%;
+    padding:0.5rem;
+}
+
+
+.copyright{
+    color: var(--primary);
 }
 
 
@@ -364,7 +429,7 @@ footer img{
         padding-top: 10rem;
     }
     header{
-        clip-path: polygon(0 0,100% 0,100% 100%, 27% 89%,0 100%);
+        clip-path: polygon(0 0,100% 0,100% 100%, 87% 96%,0 100%);
     }
     section.about .about-me-img{
         height: 360px;
@@ -391,7 +456,7 @@ footer img{
     }
     .hero .left{
         margin-top: -5rem;
-        margin-right: -9rem;
+        margin-right: 1rem;
         padding-bottom: 4rem;
     }
     .about-inner-wrap {
@@ -420,6 +485,9 @@ footer img{
         padding-bottom: 8rem ;
     }
     section.contact .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    section.contact .input-wrap{
         grid-template-columns: repeat(1,1fr);
     }
 }
